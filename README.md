@@ -16,6 +16,11 @@ Coders alternate between compiling quantum code (which requires holding two adja
 ### Compilation
 Build the application using the provided `Makefile`:
 ```bash
+# Cloner le dépôt
+git clone https://github.com/42-Projects-Nadoho/Codexion.git
+cd Codexion
+
+# Compiler (Makefile fourni)
 make
 ```
 This generates the `codexion` binary.

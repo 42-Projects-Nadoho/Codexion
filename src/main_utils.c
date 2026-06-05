@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main_utils.c                                       :+:      :+:    :+:   */
-/*                                                    +:    +:            */
-/*   By: luzolo <luzolo@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/01 08:00:00 by luzolo            #+#    #+#             */
-/*   Updated: 2026/06/01 08:00:00 by luzolo           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "codexion.h"
 
 static int	is_positive_int(const char *str)
@@ -69,13 +57,13 @@ int	parse_arguments(t_simulation *sim, int argc, char **argv)
 	sim->scheduler = argv[8];
 	if (sim->number_of_coders < 1)
 	{
-		fprintf(stderr, "Error: Number of coders must be at least 1.\n");
+		fprintf(stderr, "ERREUR: Il doit avoir au moins 1 codeur 1.\n");
 		return (0);
 	}
 	if (strcmp(sim->scheduler, "fifo") != 0
 		&& strcmp(sim->scheduler, "edf") != 0)
 	{
-		fprintf(stderr, "Error: Scheduler must be 'fifo' or 'edf'.\n");
+		fprintf(stderr, "ERREUR: Le gestionnaire doit etre 'fifo' ou 'edf'.\n");
 		return (0);
 	}
 	return (1);

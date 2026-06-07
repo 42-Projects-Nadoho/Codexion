@@ -2,11 +2,11 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:    +:            */
-/*   By: luzolo <luzolo@student.42.fr>              +#+  +:+       +#+        */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nadoho <nadoho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/01 08:00:00 by luzolo            #+#    #+#             */
-/*   Updated: 2026/06/01 08:00:00 by luzolo           ###   ########.fr       */
+/*   Created: 2026/06/05 17:22:38 by nadoho            #+#    #+#             */
+/*   Updated: 2026/06/07 20:56:48 by nadoho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int	main(int argc, char **argv)
 		return (0);
 	if (!init_simulation(&sim))
 	{
-		fprintf(stderr, "Error: Simulation initialization failed.\n");
+		fprintf(stderr, "Error: Simulation echouee.\n");
 		return (1);
 	}
 	if (!start_coder_threads(&sim))

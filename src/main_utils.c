@@ -6,7 +6,7 @@
 /*   By: nadoho <nadoho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 17:24:00 by nadoho            #+#    #+#             */
-/*   Updated: 2026/06/05 17:24:01 by nadoho           ###   ########.fr       */
+/*   Updated: 2026/06/07 22:40:46 by nadoho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,13 +69,13 @@ int	parse_arguments(t_simulation *sim, int argc, char **argv)
 	sim->scheduler = argv[8];
 	if (sim->number_of_coders < 1)
 	{
-		fprintf(stderr, "Error: Number of coders must be at least 1.\n");
+		fprintf(stderr, "ERREUR: Il doit avoir au moins 1 codeur 1.\n");
 		return (0);
 	}
 	if (strcmp(sim->scheduler, "fifo") != 0
 		&& strcmp(sim->scheduler, "edf") != 0)
 	{
-		fprintf(stderr, "Error: Scheduler must be 'fifo' or 'edf'.\n");
+		fprintf(stderr, "ERREUR: Le gestionnaire doit etre 'fifo' ou 'edf'.\n");
 		return (0);
 	}
 	return (1);
